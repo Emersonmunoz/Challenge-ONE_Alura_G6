@@ -22,12 +22,12 @@ Variables globales para definir tema
 :root.dark{
     --Font:#04f440;
     --White:#060606;
-    --Dark-Blue:#81b7f9;
+    --Dark-Blue:#27AE60;
     --Greey:#C5C5C5;
     --Medium-Gray:#67808E;
     --RGBA:rgba(246, 242, 242, 0.08);
     --White-Blue:#D8DFE8;
-    --Medium-Blue:#fcf4018a;
+    --Medium-Blue:#F7DC6F; 
     --Gray:#343A40;
 }
 
@@ -173,8 +173,8 @@ main{
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-    color: var(--Medium-Gray);
-    background: var(--White-Blue);
+    color: var(--White);
+    background: var(--Dark-Blue);
     border: 1px solid var(--Dark-Blue);
     border-radius: 24px;
     cursor: pointer;
@@ -235,7 +235,6 @@ main{
     color: var(--Medium-Blue);
     text-shadow: #04f440;
 }
-ß
 .img-muñeco{
     background-color: var(--White);
     width: 50%;
@@ -256,9 +255,9 @@ main{
 .texto-dos{
     font-style: normal;
     font-weight: 400;
-    font-size: 10px;
+    font-size: 13px;
     line-height: 200%;
-    margin-top: 45px;
+    margin-top: 39px;
     color: var(--Medium-Blue);
     background: var(--White);
     background-color: var(--White);
@@ -353,6 +352,18 @@ footer{
     align-items: center;
     color: var(--Medium-Blue);
 }
+.tit-contenedor{
+    position: absolute;
+    align-items: center;
+    filter: opacity(.5);
+    font-size: 16px;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: -60px;
+    top: 2.5em;
+    color:var(--Medium-Blue);
+}
 /*---------------
 Diplay Media
 ----------------*/
@@ -363,7 +374,11 @@ Diplay Media
         align-items: center;
         width: 100%;
     }
-
+    ::selection{
+        background: var(--Medium-Blue);
+        color: var(--Dark-Blue); 
+    }
+ 
     .encriptador{
         margin: 168px 0px 0px 0px;
         display: flex;
@@ -371,7 +386,19 @@ Diplay Media
         align-items: center;
         width: 100%;
     }
-
+ 
+    .encriptar{
+        width: 660px;
+        height: 300px;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 48px;
+        background-color: var(--White);
+        outline: none;
+        border: 1px solid var(--Medium-Blue);
+        border-radius: 15px;
+        resize: none;
+    }
     .encriptador-contenedor{
         display: flex;
         align-items: center;
@@ -382,18 +409,24 @@ Diplay Media
         position: inherit;
         margin: 15px;
     }   
-    
+ 
     .tarjeta{
         width: 665px;
         height: 300px;
         display: flex;
         justify-content: center;
         align-items: flex-end;
+        background-color: var(--White);
+        box-shadow: 10px 16px 20px -8px var(--Medium-Blue);
+        position: relative;
+        margin-top: 40px;
+        border-radius: 32px;
+        text-align: center;
     }
 
     .tarjeta-contenedor{
         display: block;
-        justify-content: start;
+        justify-content: stretch;
         align-items: self-end;
         width: 100%;
         position: absolute;
@@ -401,13 +434,24 @@ Diplay Media
         font-size: 24px;
         font-weight: 700;
     }
+    .texto-aviso{
+        width: 100%;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        opacity: 0.8;
+        color: var(--Medium-Blue);
+    }
     .tit-contenedor{
         position: absolute;
+        filter: opacity(.5);
         font-size: 16px;
         font-weight: bolder;
         font-style: italic;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        margin-top: 2px;
+        margin-top: -60px;
+        top: 2.5em;
         color:var(--Medium-Blue);
     }
     .texto-uno{
@@ -453,6 +497,7 @@ Diplay Media
 
     .encriptador-contenedor{
         display: grid;
+        align-items: center;
         width: 80%;
         gap: 21px;
     }
@@ -472,19 +517,23 @@ Diplay Media
     .tarjeta{
         width: 80%;
         justify-content: space-evenly;
+        padding: 0%;
     }
     .evaluar{
         margin-top: 48px;
     }
+
     .tit-contenedor{
         position: absolute;
+        width: 80%;
+        height: 160px;
         align-items: center;
-        padding-top: -168px;
         font-size: 16px;
         font-weight: bolder;
         font-style: italic;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         color: var(--Medium-Blue);
+        filter: opacity(.5);
     }
     .texto-uno{
         margin-top: 50px;
