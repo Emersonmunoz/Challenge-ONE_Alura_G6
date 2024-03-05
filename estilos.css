@@ -8,27 +8,27 @@ Variables globales para definir tema
 ------------*/
 :root,
 :root.light{
-    --Font:#E5E5E5;
+    --Font:#3498DB ;
     --White:#ffffff;
     --Dark-Blue:#0A3871;
-    --Greey:#C5C5C5;
+    --Greey:#ffffff;
     --Medium-Gray:#67808E;
     --RGBA:rgba(0,0,0,0.08);
     --White-Blue:#D8DFE8;
-    --Medium-Blue:#2781ee8a;
-    --Gray:#343A40;
+    --Medium-Blue: #5D6D7E;
+    --Gray:#0A3871;
 
 }
 :root.dark{
     --Font:#04f440;
     --White:#060606;
-    --Dark-Blue:#27AE60;
+    --Dark-Blue:#04f440;
     --Greey:#C5C5C5;
-    --Medium-Gray:#67808E;
+    --Medium-Gray:#04f440;
     --RGBA:rgba(246, 242, 242, 0.08);
     --White-Blue:#D8DFE8;
     --Medium-Blue:#F7DC6F; 
-    --Gray:#343A40;
+    --Gray:#000000;
 }
 
 *{
@@ -149,9 +149,9 @@ main{
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-    color: var(--White);
-    background: var(--Dark-Blue);
-    border: 1px solid var(--Dark-Blue);
+    color: var(--Greey);
+    background: var(--Gray);
+    border: 1px solid var(--Font);
     border-radius: 24px;
     cursor: pointer;
     box-shadow: 0px 20px 29px -5px var(--RGBA); 
@@ -159,7 +159,7 @@ main{
 
 .btn-encriptar:active{
     background-color: var(--White);
-    box-shadow: inset 2px 2px 4px var(--Font),
+    box-shadow: inset 2px 2px 4px var(--Font);
     inset -3px -4px 8px var(--Dark-Blue);
     color: var(--White-Blue);
 }
@@ -173,9 +173,9 @@ main{
     font-size: 16px;
     line-height: 19px;
     text-align: center;
-    color: var(--White);
-    background: var(--Dark-Blue);
-    border: 1px solid var(--Dark-Blue);
+    color: var(--Greey);
+    background: var(--Gray);
+    border: 1px solid var(--Font);
     border-radius: 24px;
     cursor: pointer;
     box-shadow: 0px 20px 29px -5px var(--RGBA); 
@@ -198,9 +198,9 @@ main{
     line-height: 19px;
     text-align: center;
     background-color: var(--White);
-    color: var(--White);
-    background: var(--Dark-Blue);
-    border: 1px solid var(--Dark-Blue);
+    color: var(--Greey);
+    background: var(--Gray);
+    border: 1px solid var(--Font);
     border-radius: 24px;
     cursor: pointer;
     box-shadow: 0px 20px 29px -5px var(--RGBA); 
@@ -299,8 +299,9 @@ main{
     font-size: 14px;
     line-height: 19px;
     text-align: center;
-    background: var(--White-Blue);
-    border: 1px solid var(--Dark-Blue);
+    color: var(--Greey);
+    background: var(--Gray);
+    border: 1px solid var(--Font);
     border-radius: 20px;
     cursor: pointer;
 }
@@ -333,7 +334,8 @@ footer{
     list-style: none;
     display: inline-flex;
     justify-content: center;
-    height: 60px;
+    height: 40px;
+    background-color: var(--White);
   }
   
   li {
@@ -345,9 +347,11 @@ footer{
     color: #164172;
     font-size: xx-large;
     text-shadow: 2px 2px 15px rgb(202, 202, 202);
+    background-color: var(--White);
     
   }
 .derechos{
+    height: fit-content;
     background-color: var(--White);
     align-items: center;
     color: var(--Medium-Blue);
